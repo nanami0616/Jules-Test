@@ -46,7 +46,7 @@ body {
 
 /* 次のブロック表示用Canvasのスタイル */
 #next-block {
-    border: 1px solid #ccc; /* 枠線を薄い灰色で設定 */
+    border: 2px solid #333; /* 枠線を太めの黒色で設定 */
     background-color: #f8f8f8; /* 背景色を白に近い色に設定 */
     margin-top: 5px; /* 上の見出しとの間に少しマージン */
     margin-bottom: 15px; /* 下の操作説明との間にマージン */

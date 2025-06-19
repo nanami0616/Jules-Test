@@ -439,7 +439,6 @@ function hardDrop() {
             return;
         }
     }
-    drawBoard(); // ボードを再描画 (spawnNewTetromino内で呼ばれるdrawBoardの前にこちらが呼ばれることを期待)
 }
 
 // --- ゲーム管理関数 ---
