@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テトリス</title>
+    <link rel="stylesheet" href="style.css"> <!-- スタイルシートの読み込み -->
+</head>
+<body>
+    <h1>テトリス</h1>
+
+    <!-- ゲーム全体のコンテナ -->
+    <div class="container">
+        <!-- ゲームボードを描画するCanvas要素 -->
+        <canvas id="game-board" width="300" height="600"></canvas>
+
+        <!-- スコアや次のブロック、操作説明などを表示する情報エリア -->
+        <div class="info">
+            <h2>スコア</h2>
+            <p id="score">0</p> <!-- スコア表示用 -->
+
+            <h2>次のブロック</h2>
+            <canvas id="next-block" width="120" height="120"></canvas> <!-- 次のブロック表示用 -->
+
+            <!-- 操作説明 -->
+            <div class="controls">
+                <h2>操作方法</h2>
+                <p>← → : 移動</p>
+                <p>↑ : 回転</p>
+                <p>↓ : ソフトドロップ</p>
+                <p>スペース : ハードドロップ</p>
+                <p>Enter : リスタート (ゲームオーバー時)</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScriptファイルの読み込み -->
+</body>
+</html>

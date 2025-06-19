@@ -1,0 +1,68 @@
+/* style.css */
+
+/* ページ全体の基本スタイル */
+body {
+    font-family: sans-serif; /* 基本フォントとしてサンセリフ体を指定 */
+    display: flex; /* Flexboxを使用して中央寄せレイアウトを実現 */
+    flex-direction: column; /* Flexアイテム（子要素）を縦方向に並べる */
+    align-items: center; /* Flexアイテムを水平方向の中央に配置 */
+    background-color: #f0f0f0; /* ページの背景色を薄い灰色に設定 */
+    margin: 0; /* ブラウザデフォルトのマージンをリセット */
+    padding-top: 20px; /* ページ上部に余白を追加 */
+}
+
+/* ゲームボードと情報エリアをまとめるコンテナのスタイル */
+.container {
+    display: flex; /* Flexboxを使用して内部要素（ゲームボード、情報エリア）を横並びに配置 */
+    gap: 20px; /* ゲームボードと情報エリアの間の隙間を設定 */
+    margin-top: 20px; /* h1見出しとの間にマージンを設定 */
+}
+
+/* ゲームボード (Canvas) のスタイル */
+#game-board {
+    border: 2px solid #333; /* ゲームボードの枠線を太めの黒色で設定 */
+    background-color: #e0e0e0; /* ゲームボードの背景色 (ブロックがない部分) */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* ゲームボードに影を追加 */
+}
+
+/* 情報エリア (スコア、次のブロックなど) のスタイル */
+.info {
+    text-align: center; /* テキストコンテンツを中央揃え */
+    padding: 10px 20px; /* 内側の余白 */
+    background-color: #e9e9e9; /* 情報エリアの背景色 */
+    border-radius: 8px; /* 角を少し丸める */
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.15); /* 情報エリアに影を追加 */
+}
+
+.info h2 {
+    margin-top: 10px;
+    margin-bottom: 5px; /* 見出し下のマージンを調整 */
+}
+
+.info p {
+    margin-top: 0;
+    margin-bottom: 10px; /* 段落下のマージンを調整 */
+}
+
+/* 次のブロック表示用Canvasのスタイル */
+#next-block {
+    border: 1px solid #ccc; /* 枠線を薄い灰色で設定 */
+    background-color: #f8f8f8; /* 背景色を白に近い色に設定 */
+    margin-top: 5px; /* 上の見出しとの間に少しマージン */
+    margin-bottom: 15px; /* 下の操作説明との間にマージン */
+}
+
+/* 操作説明エリアのスタイル */
+.controls {
+    margin-top: 20px; /* 次のブロック表示エリアとの間にマージン */
+    text-align: left; /* 操作説明は左寄せの方が見やすい */
+    font-size: 0.9em; /* 少しフォントサイズを小さく */
+}
+
+.controls h2 {
+    margin-bottom: 8px;
+}
+
+.controls p {
+    margin: 4px 0; /* 操作説明各行の上下マージンを調整 */
+}
